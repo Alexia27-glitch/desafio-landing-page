@@ -1,0 +1,284 @@
+:root{
+
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #0f0f0f;
+    --muted-text-color:#dce0c8;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Spartan', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+.logo img{
+    width: 1.5%;
+    height: auto;
+    position: fixed;
+    top: 4%;
+    left: 90px;
+}
+#title {
+    position: absolute;
+    z-index: 10;
+    color: var(--secondary-text-color);
+    font-size: 25px;
+    margin-left: 120px;
+    margin-top: 1.9%;
+    position: fixed;
+}
+
+/* #menu-bar{
+    width: 5px;
+    height: auto;
+    display: none;
+    float: right;
+} */
+
+.nav{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 3%;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+    transition: .3s;    
+
+}
+.nav a{
+    padding: 8px 14px;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav a:hover{
+    border-bottom: 1px solid #0f0f0f;
+}
+
+/*-------Home--------*/
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    width: 50%; 
+    z-index: 9;
+    /* margin: 50px; */
+}
+
+.landing-text{
+    position: absolute;
+    margin-top: 60%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10%;
+}
+.landing-search{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: var(--muted-text-color);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    
+}
+
+.search{
+    width: 110px;
+    margin: 60px 0;
+    padding: 10px 40px;
+    margin-top: 100px;
+    color: #0f0f0fbc;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--muted-text-color);
+}
+
+.side-image{
+    position: absolute;
+    top: -250%;
+    left: 100%;
+    width: 500px;
+    z-index: 10;
+}
+.side-image img {
+    width: 100%;
+    height: auto;   
+}
+/* 
+.side-image::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    right: -70px;
+    width: 400px;
+    height: 400px;
+    background-color: #dce0c850;
+    border-radius: 50%;
+}
+.side-image::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -40px;
+    right: 50px;
+    width: 400px;
+    height: 400px;
+    background-color: var(--muted-text-color);
+    border-radius: 50%;
+} */
+
+.underline-text{
+    border-bottom: 4px solid var(--muted-text-color);
+}
+
+#servicios, #testimonios, #aboutus{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    /* corregir el margin top */
+}
+
+
+/*-------Cards Servicios--------*/
+.header-card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Spartan', sans-serif;
+    margin: 10px;
+}
+.card-description{
+    display: flex;
+    justify-content: flex-start;
+    margin: 40px 20px;
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+}
+.d-block{
+    width: 400px;
+    height: 300px;
+    border-color: var(--secondary-text-color);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0.0, 0.2);
+}
+
+/*-------Sobre nosotros--------*/
+.aboutus-text{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 50%;
+}
+
+.wave{
+    opacity: 0.2;
+    position: absolute;
+}
+
+/*-------Redes sociales--------*/
+.icons-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    
+}
+.social-icon img{
+    width: 45px;
+    margin: 15px;
+}
+
+/*-------Testimonios--------*/
+#testimonios{
+    width: 100%;
+    height: 100px;
+    border: solid rgb(25, 0, 255) 1px;
+}
+#testimonios div{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    /* border: solid black 1px;
+    background-color: var(--muted-text-color); */
+}
+.container-testimonios{
+    width: 100%;
+    height: 400px;
+    background-color: var(--muted-text-color);
+    opacity: 0.2;
+    border: solid red 1px;
+}
+
+/*-------Footer--------*/
+
+.container-footer{
+    display: flex;
+    justify-content: flex-start;
+    /* padding-left: 60px; */
+    padding-top: 150px;
+    width: 100%;
+    height: 300px;
+    border: solid rgb(5, 43, 65) 1px;
+}
+.title-footer{
+    font-size: 20px;
+    text-decoration: none;
+    /* font-family:'Poppins', sans-serif; */
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+    margin-left: 120px;
+}
+.logo-footer{
+    position: absolute;
+    width: 2%;
+    height: auto;
+    margin-top: -10px;
+    left: 90px;  
+}
+.container-article{
+    position: absolute;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    /* border: solid red 1px; */
+    box-sizing: content-box;
+    
+}
+.container-article h5{
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+    font-size: 15px;  
+    /* border: solid red 1px; */
+}
+.container-article article{
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px 0 25px;
+    
+}
+.icons-footer{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.icons-footer .social-icon img{
+    width:35px;
+}
+
