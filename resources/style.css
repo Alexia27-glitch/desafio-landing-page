@@ -9,59 +9,19 @@ input:focus, textarea:focus, select:focus{
     outline: none;
 }
 body{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
-
-/* header{
-    position: fixed;
-    top: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--primary-text-color);
-    width: 100%;
-    z-index: 10;
-    padding: 10px 0;
-} */
-
 .logo{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .logo-img img{
     width: 40px;
     height: auto;
 }
 #title {
     font-size: 25px;
-}
-
-.nav{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    z-index: 100;
-    transition: .3s;
-}
-.nav a{
-    padding: 8px 31px;
-    color: var(--secondary-text-color);
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.nav a:hover{
-    transition: .4s;
-    box-shadow: 0px 2px 2px var(--muted-text-color);
-}
-.fav{
-    font-weight: bold;
-}
-.fav-icon{
-    color: var(--muted-text-color);
 }
 
 /*-------Home--------*/
@@ -72,7 +32,7 @@ body{
     align-items: center;
     width: 100%; 
     height: 640px;
-    background-image: url("https://bestgifs.makeagif.com/wp-content/uploads/2016/07/cabin.gif");
+    background-image: url("https://images.unsplash.com/photo-1575403071235-5dcd06cbf169?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -85,7 +45,6 @@ body{
     flex-direction: column;
     justify-content: center;
     color: var(--primary-text-color);
-
 }
 .landing-text h2{
     font-size: 60px;
@@ -111,7 +70,6 @@ body{
 .search-button{
     width: 130px;
     height: 50px;
-    background-color: red;
     border-radius: 100px;
     border: none;
     display: flex;
@@ -119,127 +77,38 @@ body{
     align-items: center;
     background-color: var(--muted-text-color);
     opacity: .8;
-    
 }
-
 .search-button:hover{
     transform: scale(1.02);
     box-shadow: 2px 2px 4px rgba(0, 0, 0.0, 0.2);
     transition: .4s;
 }
-
 .search-button span{
     margin-top: -5px;
     font-weight: bold;
 }
-
-.side-image{
-    position: absolute;
-    top: 50px;
-    left: 90%;
-    width: 100%;
-    height: auto;
-    z-index: 10;
-}
-.side-image img {
-    width: 100%;
-    border-radius: 100px;
-    height: auto;   
-}
-
 .underline-text{
     border-bottom: 4px solid var(--muted-text-color);
 }
 
-/*-------Cards Services--------*/
-
-.services-cards{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-#services p{
-    display: flex;
-    justify-content:center;
-    text-align: center;
-}
-#services .title-text{
-    font-size: 40px;
-    position: relative;
-}
-
+/*-------Services--------*/
 #services .title-text-badge::after{
     content: '';
     display: block;
     height: 19px;
-    width: 66px;
-    background: url(https://apexamerica.com/wp-content/themes/Apex/assets/images/before-title.svg) no-repeat center center;
+    width: 60px;
+    background: url(/resources/img/line-gradient.svg) no-repeat center center;
     margin-bottom: 20px!important;
     margin-left: -90px;
     position: relative;
     top: -35px;
 }
-
-@media (min-width: 62em) {
-    .title-text {
-        margin-top: 7rem;
-    }
-}
-
-@media (min-width: 40em){
-    .title-text {
-        font-size: 50px;
-    }
-}
-
 #services{
     margin-top: 150px;
 }
-
 .service-img{
     overflow: hidden;
-    border-radius: 40px;
 }
-
-.card{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 350px;
-    height: 500px;
-    margin: 35px;
-    background-color: var(--primary-text-color);
-    border-radius: 30px;
-    border: none;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0.0, 0.2);
-}
-.title-card{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
-}
-.card-description{
-    display: flex;
-    justify-content: flex-start;
-    margin: 40px 20px;
-    font-size: 15px;
-    color: var(--secondary-text-color);
-    font-family: 'Spartan', sans-serif;
-}
-.img-card{
-    display: flex;
-    margin-top: 20px;
-}
-.img-card img{
-    width: 100%;
-    height: auto;
-    border-color: var(--secondary-text-color);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0.0, 0.2);
-    background-color: rgb(0, 255, 34);
-}
-
 /*-------Sobre nosotros--------*/
 #aboutus{
     background-color: #fbf9fa;
@@ -247,7 +116,6 @@ body{
     padding: 180px 0;
     box-sizing: border-box;
 }
-
 .about-img{
     position: relative;
 }
@@ -261,21 +129,13 @@ body{
 .about-img img{
     position: relative;
     width: 100%;
-    border-radius: 40px;
+    border-radius: 10px;
     z-index: 10;
 }
-
 /*-------Redes sociales--------*/
 .wave{
     opacity: 0.2;
     position: absolute;
-}
-.icons-container{
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    
 }
 .social-icon{
     margin: 0 10px;
@@ -286,75 +146,20 @@ body{
     color: white;
 }
 .social-icon i{
-    font-size: 40px;
+    font-size: 30px;
 }
-
 /*-------Testimonios--------*/
 #testimonials .carousel-testimonials{
     height: 600px;
     overflow: hidden;
 }
-
 #testimonials .carousel-caption{
     bottom: unset;
     right: unset;
     top: 19%;
-    left: 12%;
+    left: 2%;
 }
-
 /*-------Footer--------*/
-
-.container-footer{
-    display: flex;
-    justify-content: flex-start;
-    /* padding-left: 60px; */
-    padding-top: 150px;
-    width: 100%;
-    height: 300px;
-    border: solid rgb(5, 43, 65) 1px;
-}
-.title-footer{
-    font-size: 20px;
-    text-decoration: none;
-    font-family: 'Spartan', sans-serif;
-    font-weight: bold;
-    margin-left: 120px;
-}
-.logo-footer{
-    position: absolute;
-    width: 2%;
-    height: auto;
-    margin-top: -10px;
-    left: 90px;  
-}
-.container-article{
-    position: absolute;
-    right: 10%;
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    box-sizing: content-box;
-    
-}
-.container-article h5{
-    font-family: 'Spartan', sans-serif;
-    font-weight: bold;
-    font-size: 15px;  
-}
-.container-article article{
-    display: flex;
-    flex-direction: column;
-    padding: 0 25px 0 25px;
-    
-}
-.icons-footer{
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-.icons-footer .social-icon img{
-    width:35px;
-}
 
 .footer-clean {
     padding:50px 0;
@@ -390,6 +195,8 @@ body{
   .footer-clean .item.social {
     text-align:right;
   }
+
+
   
   @media (max-width:767px) {
     .footer-clean .item {
@@ -423,12 +230,13 @@ body{
     opacity:0.9;
   }
   
+  
+
   @media (max-width:991px) {
     .footer-clean .item.social > a {
       margin-top:40px;
     }
   }
-  
   @media (max-width:767px) {
     .footer-clean .item.social > a {
       margin-top:10px;
@@ -441,10 +249,6 @@ body{
     font-size:13px;
     opacity:0.6;
   }
-
-
-
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .landing{
         border-radius: 0 0 200px 0;
@@ -460,8 +264,16 @@ body{
         margin-bottom: 100px;
     }
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 62em) {
+    .title-text {
+        margin-top: 7rem;
+    }
+}
+@media (min-width: 40em){
+    .title-text {
+        font-size: 50px;
+    }
+}
 @media only screen and (min-width: 600px) {
     .landing{
         border-radius: 0 0 200px 0;
@@ -477,8 +289,6 @@ body{
         margin-bottom: 100px;
     }
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .landing{
         border-radius: 0 400px 400px 0;
@@ -494,10 +304,4 @@ body{
         margin-bottom: 0;
     }
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
 
