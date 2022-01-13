@@ -18,6 +18,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--secondary-text-color);
 }
 .logo-img img{
     width: 40px;
@@ -36,53 +41,7 @@ body{
 .nav-link:hover {
     color: #bdc3c7!important;
   }
-
-  /*******Verde derecha******/
-/* .nav-link:before{
-    content: "";
-    width: 0px;
-    height: 3px;
-    background: #16a085;
-    visibility: hidden;
-    position: absolute;
-    top: -20%;
-    left: 0;
-    transition: all .3s ease;
-    mix-blend-mode: multiply;
-} */
-
-
- /******Azul izquierda*******/
- /* .nav-link:after {
-    content:'';
-    width: 0px;
-    height: 3px;
-    background: #2980b9;
-    position: absolute;
-    top: -20%;
-    right: 0;
-    transition: all .3s ease;
-    mix-blend-mode: multiply;
-  } */
-
-  
-/******Fucsia derecha*******/
-/* .nav-link:before {
-    content:'';
-    width: 0px;
-    height: 3px;
-    background: var(--secondary-text-color);
-    margin-top: 50px;
-    position: absolute;
-    bottom: -20%;
-    left: 0;
-    transition: all .3s ease;
-    mix-blend-mode: multiply;
-  } */
-
-
  
- /******Verde oliva*******/ 
 .nav-link:after {
     content:'';
     width: 0px;
@@ -95,11 +54,6 @@ body{
     transition: all .3s ease;
     mix-blend-mode: multiply;
   }
-
-  /* .nav-link:before, .nav-link:hover .a:before {
-    width: 100%;
-    transform: translateX(100%);
-  } */
 .nav-link:hover:after, .nav-link:hover .a:after {
     width: 100%;
     transform: translateX(0);
